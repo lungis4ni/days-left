@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.everything {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  top: 0vh;
+  background-color: #1a1a1a;
+  background-image: url(../images/seasons2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+.everything .cont2 {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: solid 1px white;
+}
+
+.everything header {
+  margin: 30px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+
+.everything form {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(53, 53, 53, 0.4)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(53, 53, 53, 0.4));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px;
+  color: #0084ff;
+  text-transform: uppercase;
+}
+
+.everything form button {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: solid 2px white;
+}
+
+.everything form div {
+  margin-bottom: 10px;
+}
+
+.everything form label {
+  padding: 10px;
+  margin: 10px;
+  font-size: 1.2rem;
+}
+
+.everything form input {
+  background-color: transparent;
+  border: solid 1px #ffff;
+  border-radius: 10px;
+  width: 50px;
+  height: 30px;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+  color: #ffff;
+  text-transform: uppercase;
+}
+
+.everything form input:focus {
+  border: solid 1px #0084ff;
+  color: #0084ff;
+  outline: none;
+}
+
+.everything form #submit {
+  background: #ffff;
+  border: solid 1px #ffff;
+  width: 80px;
+  padding: 12px;
+  color: black;
+  text-align: center;
+  height: auto;
+}
+
+.everything form #submit:focus {
+  border: solid 1px #0084ff;
+  color: #0084ff;
+  outline: none;
+  background: transparent;
+}
+
+.everything .result {
+  padding: 30px;
+  margin: 0 auto;
+  margin-top: 10px;
+  max-width: 60vw;
+  color: white;
+  display: none;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.everything .result p {
+  padding: 15px;
+  text-align: center;
+}
+
+.everything .result h3 {
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.everything .result .timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.everything .result .timer div {
+  border: solid 2px white;
+  margin: 10px;
+}
+
+.everything .result .timer div h1 {
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.everything .result .timer div p {
+  text-align: center;
+  font-size: 0.7rem;
+  padding: 5px;
+}
+
+.inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+/*# sourceMappingURL=main.css.map */

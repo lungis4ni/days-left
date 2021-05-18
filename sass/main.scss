@@ -1,0 +1,176 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.everything 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 0vh;
+    background-color: #1a1a1a;
+    background-image: url(../images/seasons2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+
+    .cont2 
+    {
+        //background-image: linear-gradient(to right, #191b1d, #424242) ;
+        background-color: rgba(0, 0, 0, 0.8);
+        border: solid 1px white;
+        //border-radius: 30px;
+    }
+
+    header 
+    {
+        margin: 30px;
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+    }
+
+    form 
+    {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(53, 53, 53, 0.4));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px;
+        color: #0084ff;
+        text-transform: uppercase;
+
+        button 
+        {
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+            border: solid 2px white;
+        }
+    
+        div 
+        {
+            margin-bottom: 10px;
+
+        }
+
+        label
+        {
+            padding: 10px;
+            margin: 10px;
+            font-size: 1.2rem;
+        }
+
+        input 
+        {
+            background-color: transparent;
+            border: solid 1px #ffff;
+            border-radius: 10px;
+            width: 50px;
+            height: 30px;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+            color: #ffff;
+            text-transform: uppercase;
+
+            &:focus
+            {
+                border: solid 1px #0084ff;
+                color: #0084ff;
+                outline: none;
+            }
+        }
+
+        #submit
+        {
+            background: #ffff;
+            border: solid 1px #ffff;
+            width: 80px;
+            padding: 12px;
+            color: black;
+            text-align: center;
+            height: auto;
+
+            &:focus 
+            {
+                border: solid 1px #0084ff;
+                color: #0084ff;
+                outline: none;
+                background: transparent;
+            }
+        }
+    }
+
+    .result 
+    {
+        //background-color: #f16d6d;
+        padding: 30px;
+        margin: 0 auto;
+        margin-top: 10px;
+        //border-radius: 20px;
+        max-width: 60vw;
+        color: white;
+        display: none;
+        transition: 0.4s ease-in-out;
+
+        p 
+        {
+            padding: 15px;
+            text-align: center;
+        }
+
+        h3
+        {
+            text-align: center;
+            padding: 10px;
+            text-transform: uppercase;
+        }
+        
+        .timer 
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+
+            div 
+            {
+                border: solid 2px white;
+                margin: 10px;
+
+                h1 
+                {
+                    padding: 15px;
+                    text-align: center;
+                    margin-bottom: 0;
+                }
+
+                p 
+                {
+                    text-align: center;
+                    font-size: 0.7rem;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
+
+.inputs 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+
+
+}
