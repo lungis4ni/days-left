@@ -114,6 +114,22 @@
   background: transparent;
 }
 
+.everything form #mmSpan {
+  text-align: center;
+  color: red;
+  font-size: smaller;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+}
+
 .everything .result {
   padding: 30px;
   margin: 0 auto;

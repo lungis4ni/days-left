@@ -5,34 +5,46 @@ function cntDown()
 {
     var dd = document.getElementById("dd").value;
     var mm = document.getElementById("mm").value;
+    var mmSpan = document.getElementById("mmSpan");
 
     console.log(dd);
     console.log("Date Entered: " + dd + " " + mm);
-
-    // Result Class
-    var res = document.getElementsByClassName('result')[0];
-
-    res.style.display = "block";
 
     //Error Handling for dd and mm
 
     if (dd < 1 || dd > 31){
         console.log("Invalid Day Entered");
+        mmSpan.innerText = "Invalid Day Entered";
     }
 
     else if(mm < 1 || mm > 12){
         console.log("Invalid Month Entered");
+        mmSpan.innerText = "Invalid Month Entered";
+    }
+
+    else if( (dd < 1 || dd > 31) && (mm < 1 || mm > 12) )
+    {
+        mmSpan.innerText = "Both your day and month are invalid";
     }
 
     else if((dd == 30 || dd == 31) && mm == 02){
-        console.log("February only has 28/29 Days")
+        console.log("February only has 28/29 Days");
+        mmSpan.innerText = "February only has 28/29 Days";
     }
 
     else if(dd == 31 &&  (mm == 04 || mm == 06 || mm == 09 || mm == 11)){
         console.log("Invalid BirthDate");
+        mmSpan.innerText = "Invalid BirthDate";
     }
 
     else {
+
+        mmSpan.innerText = "";
+         // Result Class
+        var res = document.getElementsByClassName('result')[0];
+
+        res.style.display = "block";
+
         // Countdown Global Variables
         var daysCount = document.getElementById("days");
         var hoursCount = document.getElementById("hours");
